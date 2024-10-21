@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROCHETICA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="code.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="header">
+    <h1>CROCHETICA</h1>
+</div>
+
+<div id="navbar">
+    <a href="index.html">TUTORIALS</a>
+    <a href="projects.html"> PROJECTS</a>
+    <a class="active" href="grid-maker.html">GRID MAKER</a>
+</div>
+
+<div class="grid-maker">
+    <div id="controls" class="controls">
+        <label class="control-label">Rows: </label>
+        <input type="number" id="rows" value="10" min="1" max="50">
+        <label class="control-label">Columns: </label>
+        <input type="number" id="columns" value="10" min="1" max="50">
+        <button onclick="createGrid()">Create Grid</button>
+        <br>
+        <input type="color" id="colorPicker" class="color-picker" value="#000000">
+        <button onclick="toggleEraseMode()">Toggle Erase Mode</button>
+        <button onclick="clearGrid()">Clear Grid</button>
+    </div>
+
+    <div class="grid-container">
+        <div id="grid" class="grid"></div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROCHETICA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="code.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+    <h1>CROCHETICA</h1>
+</div>
+
+<div class="flex-container">
+    <div class="task-container" id="task-container">
+        <p>Materials needed: 5.5mm hook, 255g of yarn, tape measure, scissors, stitch markers.<br>
+            ch = chain<br>
+            sc = single crochet<br>
+            ts = trinity stitch<br>
+
+        </p>
+        <input type="checkbox" class="task" data-percentage="25" id="task1">
+        <label for="task1">Start by measuring the length from your shoulder to your waist and chain that amount (size is adjustable)</label><br>
+        
+        <input type="checkbox" class="task" data-percentage="25" id="task2">
+        <label for="task2">At the end of your chain, ch1 and turn, sc into the first stitch, continue with a ts.</label><br>
+
+        <input type="checkbox" class="task" data-percentage="25" id="task3">
+        <label for="task3">When you reach the end, instead of ch1, sc into the last stitch, ch2 and turn.</label><br>
+
+        <input type="checkbox" class="task" data-percentage="25" id="task4">
+        <label for="task4">Continue with the previous 2 steps until the panel reaches from the middle of your underarms to the base of your neck.</label><br>
+    </div>
+    <img src="pics/short-sleeve-collar-top.jpg" alt="Image" class="task-image">
+</div>
+<div class="flex-container" style="columns: unset;">
+    <div class="task-container-bot" id="task-container-bot">
+        <p>Materials needed: 5.5mm hook, 255g of yarn, tape measure, scissors, stitch markers.<br>
+            ch = chain<br>
+            sc = single crochet<br>
+            ts = trinity stitch<br>
+
+        </p>
+        <input type="checkbox" class="task" data-percentage="25" id="task1">
+        <label for="task1">Start by measuring the length from your shoulder to your waist and chain that amount (size is adjustable)</label><br>
+        
+        <input type="checkbox" class="task" data-percentage="25" id="task2">
+        <label for="task2">At the end of your chain, ch1 and turn, sc into the first stitch, continue with a ts</label><br>
+
+        <input type="checkbox" class="task" data-percentage="25" id="task3">
+        <label for="task3">Continue</label><br>
+
+        <input type="checkbox" class="task" data-percentage="25" id="task4">
+        <label for="task4">Continue with the previous 2 steps until the panel reaches from the middle of your underarms to the base of your neck.</label><br>
+    </div>
+</div>
+
+<!-- Progress Bar -->
+<div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+</div>

@@ -1,0 +1,268 @@
+body {
+        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir', sans-serif;
+        background-color: #F9F6EF;
+}
+
+.header {
+    
+        font-family: "Gasoek One", sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+        color: #99b13b;
+        font-style: normal;
+        letter-spacing: 3px;
+        display: flex;
+        justify-content: center;
+}
+
+
+/* navbar */
+#navbar {
+    font-family: 'Avenir Black', sans-serif;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.196);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a {
+    display: block;
+    border: 2px solid #4C4847;
+    border-radius: 30px;
+    color: #4C4847;
+    background-color: transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;  /* Smooth transitions */
+}
+
+#navbar a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow on hover */
+}
+
+#navbar a.active {
+    background-color: #4C4847;
+    color: white;
+    border-color: #4C4847;
+}
+
+#navbar a.active:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep the drop shadow on hover when active */
+}
+
+
+/* tutorial cards */
+.grid-container-tutorials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.tutorial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: scale(1.05);
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.tutorial-card h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tutorial-card p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.btn-tut {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #99b13b;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-tut:hover {
+    background-color: #74ac34;
+}
+
+/* projects cards */
+.grid-container-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.projects-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projects-card:hover {
+    transform: scale(1.05);
+}
+
+.projects-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.projects-card h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.projects-card p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.btn-proj {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-proj:hover {
+    background-color: #45a049;
+}
+
+/* grid maker */
+.grid-maker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.controls button {
+    font-family: 'Avenir', sans-serif;
+    background-color: transparent;
+    color: black;
+    border: solid 2px;
+    border-color: green;
+    border-radius: 30px; 
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.controls button:hover {
+    color: #e5b711;
+    background-color: transparent;
+}
+
+  .grid-container {
+    display: inline-block;
+  }
+  .grid {
+    display: grid;
+    margin-top: 20px;
+  }
+  .grid div {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+/*task container*/
+.flex-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+}
+
+.task-container {
+    width: 40%; 
+    display: block;
+    margin: auto 90px 10px;
+}
+
+/* image styling */
+.task-image {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 20px;
+    height: auto;
+    margin: 90px auto 10px;
+}
+
+.task-container-bot {
+    width: 100%; 
+    display: block;
+    margin: auto 90px;
+}
+
+/* progress bar */
+.progress-container {
+    width: 60%;
+    background-color: #dbdbdb;
+    border: 2px solid #4C4847;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 60px auto;
+}
+
+.progress-bar {
+    height: 30px;
+    width: 0%;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    transition: width 0.3s;
+}
