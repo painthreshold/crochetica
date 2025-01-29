@@ -17,7 +17,7 @@ body {
 }
 
 
-/* navbar */
+/*/ navbar /*/
 #navbar {
     font-family: 'Avenir Black', sans-serif;
     position: sticky;
@@ -42,11 +42,11 @@ body {
     font-size: 17px;
     margin: 0 10px;
     box-sizing: border-box;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;  /* Smooth transitions */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 #navbar a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow on hover */
+    box-shadow: 5px 5px pink inset;
 }
 
 #navbar a.active {
@@ -56,17 +56,17 @@ body {
 }
 
 #navbar a.active:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep the drop shadow on hover when active */
+    box-shadow: 5px 5px pink inset;
 }
 
 
-/* tutorial cards */
+/*/ tutorial cards /*/
 .grid-container-tutorials {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     column-gap: 50px;
     row-gap: 50px;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 80px auto;
     padding: 20px;
 }
@@ -78,28 +78,30 @@ body {
     overflow: hidden;
     padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tutorial-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .tutorial-card img {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px 10px 0 0;
 }
 
 .tutorial-card h2 {
     margin: 15px 0;
-    font-size: 1.5em;
+    font-size: 22px;
     color: #333;
 }
 
 .tutorial-card p {
     color: #666;
-    font-size: 1em;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
@@ -117,53 +119,55 @@ body {
     background-color: #74ac34;
 }
 
-/* projects cards */
+/*/ projects cards /*/
 .grid-container-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     column-gap: 50px;
     row-gap: 50px;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 80px auto;
     padding: 20px;
 }
 
 .projects-card {
-    background-color: #fff;
+    background-color: #f5f5f1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .projects-card img {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px 10px 0 0;
 }
 
 .projects-card h2 {
     margin: 15px 0;
-    font-size: 1.5em;
+    font-size: 22px;
     color: #333;
 }
 
 .projects-card p {
     color: #666;
-    font-size: 1em;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
 .btn-proj {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: #99b13b;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -171,10 +175,10 @@ body {
 }
 
 .btn-proj:hover {
-    background-color: #45a049;
+    background-color: #74ac34;
 }
 
-/* grid maker */
+/*/ grid maker /*/
 .grid-maker {
     display: flex;
     justify-content: center;
@@ -187,10 +191,10 @@ body {
 .controls button {
     font-family: 'Avenir', sans-serif;
     background-color: transparent;
-    color: black;
+    color: #4C4847;
     border: solid 2px;
-    border-color: green;
-    border-radius: 30px; 
+    border-color: #4C4847;
+    border-radius: 15px; 
     padding: 10px 10px;
     margin: 5px;
     font-size: 16px;
@@ -199,8 +203,10 @@ body {
 }
 
 .controls button:hover {
-    color: #e5b711;
+    color: #99b13b;
+    border-color: #99b13b;
     background-color: transparent;
+    
 }
 
   .grid-container {
@@ -218,7 +224,7 @@ body {
     cursor: pointer;
   }
 
-/*task container*/
+/*/ task container /*/
 .flex-container {
     display: flex; 
     justify-content: space-between;
@@ -232,7 +238,7 @@ body {
     margin: auto 90px 10px;
 }
 
-/* image styling */
+/*/ task image style /*/
 .task-image {
     width: 40%;
     max-width: 400px;
@@ -247,7 +253,7 @@ body {
     margin: auto 90px;
 }
 
-/* progress bar */
+/*/ progress bar /*/
 .progress-container {
     width: 60%;
     background-color: #dbdbdb;
@@ -260,9 +266,96 @@ body {
 .progress-bar {
     height: 30px;
     width: 0%;
-    background-color: #4caf50;
+    background-color: #99b13b;
     text-align: center;
     color: white;
     line-height: 30px;
     transition: width 0.3s;
+}
+
+/*/crochet tut list/*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+body {
+  font-family: Avenir Black, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+.tutorial-list {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f7f7f7;
+}
+.tutorial-item {
+  border-bottom: 1px solid #ddd;
+}
+.tutorial-item:last-child {
+  border-bottom: none;
+}
+.tutorial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+.tutorial-header:hover {
+  background: #f0f0f0;
+}
+.tutorial-header span {
+  font-size: 20px;
+}
+.tutorial-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 20px;
+}
+.tutorial-content.open {
+  max-height: 10000px;
+  padding: 20px 20px;
+}
+.tutorial-category-buttons {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+.category-button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.category-button.active {
+  background: #d0d0d0;
+  font-weight: bold;
+}
+.tutorial-section {
+  display: none;
+}
+.tutorial-section.active {
+  display: block;
+}
+.tutorial-section img,
+.tutorial-section video {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.tutorial-section p {
+  font-family: 'Avenir', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
