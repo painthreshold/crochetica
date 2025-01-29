@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const checkboxes = document.querySelectorAll('.task');
     const progressBar = document.getElementById('progress-bar');
     
-    // Function to update the progress bar
     function updateProgress() {
         let totalPercentage = 0;
         checkboxes.forEach(function (checkbox) {
@@ -65,8 +64,34 @@ document.addEventListener("DOMContentLoaded", function () {
         progressBar.textContent = totalPercentage + '%';
     }
 
-    // Add event listeners to each checkbox
     checkboxes.forEach(function (checkbox) {
         checkbox.addEventListener('change', updateProgress);
     });
 });
+
+/* tut list */
+function toggleTutorial(header) {
+  const content = header.nextElementSibling;
+  const isOpen = content.classList.contains("open");
+  const allContents = document.querySelectorAll(".tutorial-content");
+  allContents.forEach(c => c.classList.remove("open"));
+
+  if (!isOpen) {
+    content.classList.add("open");
+  }
+}
+
+/* category switch */
+function switchCategory(button, category) {
+  const buttons = button.parentNode.querySelectorAll(".category-button");
+  buttons.forEach(btn => btn.classList.remove("active"));
+  button.classList.add("active");
+
+  const sections = button.parentNode.parentNode.querySelectorAll(".tutorial-section");
+  sections.forEach(section => section.classList.remove("active"));
+
+  const activeSection = button.parentNode.parentNode.querySelector(`#${category}`);
+  if (activeSection) {
+    activeSection.classList.add("active");
+  }
+}
