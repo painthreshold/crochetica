@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROCHETICA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="code.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <h1>CROCHETICA</h1>
+</div>
+
+<div id="navbar">
+  <a href="tutorials.html">TUTORIALS</a>
+  <a href="projects.html"> PROJECTS</a>
+  <a class="active" href="grid-maker.html">GRID MAKER</a>
+</div>
+
+
+  <div class="tutorial-list">
+    <!-- slip knot -->
+    <div class="tutorial-item">
+      <div class="tutorial-header" onclick="toggleTutorial(this)">
+        Slip knot
+        <span>&#x25BC;</span>
+      </div>
+      <div class="tutorial-content">
+        <div class="tutorial-category-buttons">
+          <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+          <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+          <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+        </div>
+        <div id="picture" class="tutorial-section active">
+          <img src="pics/slip-knot.jpg" alt="slip knot pic">
+          <p>1. Pull a length of yarn from the ball.Start the loop approximately 6 inches from the end of the yarn, leaving a tail to weave in later.</p>
+          <p>2. Place the ball end of the yarn in a clockwise circle, laying it over the top of the tail end.</p>
+          <p>3. Insert the crochet hook into the center of the loop, from front to back. Use the hook to grab the ball-end yarn, and pull it through the center of the loop.</p>
+          <p>4. Pull both ends of the yarn to tighten the loop around the hook.</p>
+        </div>
+        <div id="video" class="tutorial-section">
+          <video controls>
+            <source src="pics/vids/slipknot.mp4" type="video/mp4">
+          </video>
+          <p>Slip knot video tutorial.</p>
+        </div>
+        <div id="gif" class="tutorial-section">
+          <img src="pics/gifs/slipknot/slip1.gif" alt="slip knot GIF">
+          <p>Form a circle with the end of the thread positioned at the bottom. Weave in the crochet hook through the loop.</p>
+          <img src="pics/gifs/slipknot/slip2.gif" alt="pull through the thread and tighten">
+          <p>Pull the active thread through the loop and tighten to form a slip knot</p>
+        </div>
+      </div>
+    </div>
+      <!-- starting chain -->
+        <div class="tutorial-item">
+            <div class="tutorial-header" onclick="toggleTutorial(this)">
+              Starting chain
+              <span>&#x25BC;</span>
+            </div>
+            <div class="tutorial-content">
+              <div class="tutorial-category-buttons">
+                <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+                <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+                <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+              </div>
+              <div id="picture" class="tutorial-section active">
+                <img src="pics/chain1.jpg" alt="chain pic">
+                <p>After your slip knot is done, yarn over the hook and pull up another loop. Repeat this process until desired number of chains are made.</p>
+              </div>
+              <div id="video" class="tutorial-section">
+                <video controls>
+                  <source src="pics/vids/chain.mp4" type="video/mp4">
+                </video>
+                <p>Watch this video tutorial to learn how to chain.</p>
+              </div>
+              <div id="gif" class="tutorial-section">
+                <img src="pics/gifs/chain/chain1.gif" alt="chain GIF">
+                <p>Once you've created your slip knot, simply turn your crochet hook and pull your yarn through the loop to create a chain.</p>
+              </div>
+            </div>
+          </div>
+        <!-- single crochet -->
+        <div class="tutorial-item">
+            <div class="tutorial-header" onclick="toggleTutorial(this)">
+              Single crochet
+              <span>&#x25BC;</span>
+            </div>
+            <div class="tutorial-content">
+              <div class="tutorial-category-buttons">
+                <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+                <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+                <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+              </div>
+              <div id="picture" class="tutorial-section active">
+                <img src="pics/single-crochet.jpg" alt="single crochet pic">
+                <p>Follow the steps in the picture</p>
+              </div>
+              <div id="video" class="tutorial-section">
+                <video controls>
+                  <source src="pics/vids/singlecrochet.mp4" type="video/mp4">
+                </video>
+                <p>Watch this video tutorial to learn how to single crochet.</p>
+              </div>
+              <div id="gif" class="tutorial-section">
+                <img src="pics/gifs/singlecrochet/sc1.gif" alt="single crochet 1 GIF">
+                <p>Insert hook into the chain/stitch, yarn over and pull through.</p>
+                <img src="pics/gifs/singlecrochet/sc2.gif" alt="single crochet 2 GIF">
+                <p>Once you have two yarns on your hook, yarn over again and pull through both to make a single crochet.</p>
+              </div>
+            </div>
+          </div>
+        <!-- turning chain -->
+        <div class="tutorial-item">
+            <div class="tutorial-header" onclick="toggleTutorial(this)">
+              Turning chain
+              <span>&#x25BC;</span>
+            </div>
+            <div class="tutorial-content">
+              <div class="tutorial-category-buttons">
+                <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+                <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+                <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+              </div>
+              <div id="picture" class="tutorial-section active">
+                <img src="pics/turningch1.jpg" alt="turning chain pic">
+                <p>To make a turning chain, after you're done with your row, chain one and turn your work. Make sure to skip your chain when crocheting back into your work.</p>
+              </div>
+              <div id="video" class="tutorial-section">
+                <video controls>
+                  <source src="pics/vids/turnch.mp4" type="video/mp4">
+                </video>
+                <p>Watch this video tutorial to learn how to create a turning chain.</p>
+              </div>
+              <div id="gif" class="tutorial-section">
+                <img src="pics/gifs/turningch/turnch1.gif" alt="turning chain GIF">
+                <p>To make a turning chain, after you're done with your row, chain one and turn your work. Make sure to skip your chain when crocheting back into your work.</p>
+              </div>
+            </div>
+          </div>
+        <!-- fasten off -->
+        <div class="tutorial-item">
+          <div class="tutorial-header" onclick="toggleTutorial(this)">
+            Fasten off
+            <span>&#x25BC;</span>
+          </div>
+          <div class="tutorial-content">
+            <div class="tutorial-category-buttons">
+              <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+              <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+              <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+            </div>
+            <div id="picture" class="tutorial-section active">
+              <img src="pics/fastenoff1.jpg" alt="fasten off pic">
+              <p>Once you're done with your work, make a slip stitch into the final stitch and cut the end. You can pull the end through your work for a clean look.</p>
+            </div>
+            <div id="video" class="tutorial-section">
+              <video controls>
+                <source src="pics/vids/fastoff.mp4" type="video/mp4">
+              </video>
+              <p>Watch this video tutorial to learn how to fasten off your work.</p>
+            </div>
+            <div id="gif" class="tutorial-section">
+              <img src="pics/gifs/fastoff/fastoff1.gif" alt="fasten off GIF">
+              <p>Once you're done with your work, make a slip stitch into the final stitch and cut the end. You can pull the end through your work for a clean look.</p>
+            </div>
+          </div>
+        </div>
+        <!-- color change -->
+        <div class="tutorial-item">
+          <div class="tutorial-header" onclick="toggleTutorial(this)">
+            Color change
+            <span>&#x25BC;</span>
+          </div>
+          <div class="tutorial-content">
+            <div class="tutorial-category-buttons">
+              <button class="category-button active" onclick="switchCategory(this, 'picture')">Picture</button>
+              <button class="category-button" onclick="switchCategory(this, 'video')">Video</button>
+              <button class="category-button" onclick="switchCategory(this, 'gif')">GIF</button>
+            </div>
+            <div id="picture" class="tutorial-section active">
+              <img src="pics/colorch1.jpg" alt="color change pic">
+              <p>1. Insert your hook into the next stitch, yarn over and pull up a loop. You will have two loops on your hook. Drop the yarn you’re working with and pick up the new color.</p>
+              <p>2. Pull the new color through like you’re finishing the single crochet. Pull down each end to make sure it’s secure and single crochet into the next stitch and each stitch down the row.</p>
+            </div>
+            <div id="video" class="tutorial-section">
+              <video controls>
+                <source src="pics/vids/colorch.mp4" type="video/mp4">
+              </video>
+              <p>Watch this video tutorial to learn how to do a color change in your work.</p>
+            </div>
+            <div id="gif" class="tutorial-section">
+              <img src="pics/gifs/colorchange/colorch1.gif" alt="slip knot GIF">
+              <p>Insert your hook into the next stitch, yarn over and pull up a loop. You will have two loops on your hook.</p>
+              <img src="pics/gifs/colorchange/colorch2.gif" alt="colro change GIF">
+              <p> Drop the yarn you’re working with and pick up the new color. Pull the new color through like you’re finishing the single crochet.</p>
+            </div>
+          </div>
+        </div>
+  </div>
